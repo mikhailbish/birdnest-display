@@ -1,13 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "start": "nuxt start",
-    "build": "nuxt build",
-    "heroku-postbuild": "npm run build",
-    "dev": "nuxt dev",
+    "dev": "nuxt",
+    "build": "node_modules/nuxt/bin/nuxt.js build -c ./nuxt.config.js",
+    "start": "node_modules/nuxt/bin/nuxt.js start -c ./nuxt.config.js",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "nuxt": "3.0.0"
