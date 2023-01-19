@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "nuxt start",
+    "start": "node_modules/nuxt/bin/nuxt.js start -c ./nuxt.config.js",
     "build": "nuxt build",
     "heroku-postbuild": "npm run build",
     "dev": "nuxt dev",
