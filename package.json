@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "start": "nuxt start",
     "build": "nuxt build",
+    "heroku-postbuild": "npm run build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
