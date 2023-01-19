@@ -1,12 +1,10 @@
 <script setup>
-//vueuse/core
   import displayData from "../components/displayData.vue";
   import { useIntervalFn } from '@vueuse/core';
 
   const { pending, data, error, refresh } = await useFetch('/api/offenders');
 
     useIntervalFn(() => {
-     // console.log(`refreshing the data again ${new Date().toISOString()}`);
       refresh();
   }, 2000);
 

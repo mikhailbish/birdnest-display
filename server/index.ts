@@ -4,7 +4,6 @@ const { mongoUser, mongoPassword, mongoIp, mongoOptions, dbName} = useRuntimeCon
 const mongoUrl = `mongodb+srv://${ mongoUser }:${ mongoPassword }@${ mongoIp }/${ dbName }?${ mongoOptions }`;
 export default async () => {
   try {
-    //console.log(mongoUrl);
     await mongoose.connect( mongoUrl );
     console.log("DB connection established.");
   } catch (err) {
